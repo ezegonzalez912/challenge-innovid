@@ -22,7 +22,7 @@ const ServerItem:React.FC <Props> = ({ server, serverMinimize, setInverseState, 
         ref.current && clearInterval(ref.current);
         if(server.state && server.visible){
             ref.current = setInterval( () => {
-                getUsageCPU(server.id).then((res) => setUsageCPU(res.load))
+                getUsageCPU(server.id).then((res: any) => setUsageCPU(res.load))
             }, 5000)
         }else{
             setUsageCPU(0)
