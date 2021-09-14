@@ -1,13 +1,13 @@
 {
-  "homepage": "https://ezegonzalez912.github.io/challenge-innovid",
+  "homepage": "https://ezegonzalez912.github.io/challenge-innovid/",
   "name": "@innovid-challenge/client",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "serve": "vite preview"
   },
   "dependencies": {
     "98.css": "^0.1.17",
